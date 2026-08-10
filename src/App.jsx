@@ -13,9 +13,14 @@ const fetchjson = async () => {
 const playersPromise = fetchjson();
 
 function App() {
-  const [availableBalance,setAvailableBalance]=useState(6000000);
+  const [availableBalance, setAvailableBalance] = useState(6000000);
+  const [purchase, setPurchase] = useState([]);
   //For toggling between Available and Selected Players UI
   const [toggle, setToggle] = useState(true);
+
+  const delImage=(player)=>{
+    setAvailableBalance(availableBalance+player.price)
+  }
 
   return (
     <>
@@ -24,7 +29,11 @@ function App() {
 
       {/* Top of Available and Selected players */}
       <div className={" flex  justify-between max-w-312 mx-auto mt-4"}>
-        <div className="font-bold text-2xl ">Available Players</div>
+        <div className="font-bold text-2xl ">
+          {toggle
+            ? "Available Players"
+            : `SelectedPlayers (${purchase.length}/6)`}
+        </div>
         <div className={"flex items-center "}>
           <button
             onClick={() => setToggle(true)}
@@ -36,7 +45,7 @@ function App() {
             onClick={() => setToggle(false)}
             className={`btn rounded-r-2xl border-l-0 ${!toggle ? "bg-amber-200" : ""}`}
           >
-            Selected <span>(0)</span>
+            Selected <span>({purchase.length})</span>
           </button>
         </div>
       </div>
@@ -50,10 +59,20 @@ function App() {
             </div>
           }
         >
-          <Availableplayers  availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromise={playersPromise}></Availableplayers>
+          <Availableplayers
+            setPurchase={setPurchase}
+            purchase={purchase}
+            availableBalance={availableBalance}
+            setAvailableBalance={setAvailableBalance}
+            playersPromise={playersPromise}
+          ></Availableplayers>
         </Suspense>
       ) : (
-        <Selectedplayers></Selectedplayers>
+        <Selectedplayers
+          setPurchase={setPurchase}
+          purchase={purchase}
+          delImage={delImage}
+        ></Selectedplayers>
       )}
     </>
   );

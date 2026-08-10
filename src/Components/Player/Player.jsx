@@ -2,10 +2,11 @@ import React, { use, useState } from "react";
 import userImg from "../../assets/user-1.png";
 import flagImg from "../../assets/flag.png";
 
-const Player = ({ player, availableBalance, setAvailableBalance }) => {
+const Player = ({ player, availableBalance, setAvailableBalance,purchase,setPurchase}) => {
   const [select, setSelect] = useState(false);
 
   return (
+    
     <div key={player.id} className="card bg-base-100 shadow-sm p-4">
       <figure className="rounded-2xl object-cover h-75">
         <img src={player.image} alt="Shoes" />
@@ -46,9 +47,11 @@ const Player = ({ player, availableBalance, setAvailableBalance }) => {
                   if (availableBalance > player.price) {
                     setAvailableBalance(availableBalance - player.price);
                     setSelect(true);
+                    setPurchase([...purchase,player])    
                   } else {
                     alert("Not Enough Balance!!!!");
                   }
+
                 }}
                 className="btn"
               >

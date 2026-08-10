@@ -1,9 +1,12 @@
 import React from 'react';
+import SelectPlayer from '../SelectPlayer/SelectPlayer';
 
-const Selectedplayers = () => {
+const Selectedplayers = ({ purchase, setPurchase,delImage }) => {
     return (
-        <div className="max-w-312 mx-auto">
-            Selected Players
+        <div>
+            {purchase.map((player) => (
+                <SelectPlayer delImage={delImage} key={player.id} player={player} setPurchase={setPurchase} />
+            ))}
         </div>
     );
 };
