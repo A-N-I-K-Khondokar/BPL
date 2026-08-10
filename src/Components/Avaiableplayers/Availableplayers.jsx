@@ -22,7 +22,7 @@ const Availableplayers = ({ playersPromise }) => {
               <span className="ml-3">{player.name}</span>
             </div>
 
-            <div className="flex justify-between items-center mb-5 border-b-gray-100 border-b-2 p-2">
+            <div className="flex justify-between items-center mb-5 border-b-gray-100 border-b-2 p-2 mt-4">
               <div className="flex items-center gap-2">
                 <img src={flagImg} alt="" />
                 <span>{player.country}</span>
