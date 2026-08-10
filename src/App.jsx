@@ -9,22 +9,22 @@ const fetchjson = async () => {
   const res = await fetch("/players.json");
   return res.json();
 };
+// i have to call the fetchjson() that will return a promise
+const playersPromise = fetchjson();
 
 function App() {
-  // i have to call the fetchjson() that will return a promise
-  const playersPromise = fetchjson();
-
+  const [availableBalance,setAvailableBalance]=useState(6000000);
   //For toggling between Available and Selected Players UI
   const [toggle, setToggle] = useState(true);
 
   return (
     <>
       {/* Navbar section */}
-      <Navbar></Navbar>
+      <Navbar availableBalance={availableBalance}></Navbar>
 
       {/* Top of Available and Selected players */}
-      <div className={" flex  justify-between max-w-312 mx-auto"}>
-        <div className="font-bold">Available Players</div>
+      <div className={" flex  justify-between max-w-312 mx-auto mt-4"}>
+        <div className="font-bold text-2xl ">Available Players</div>
         <div className={"flex items-center "}>
           <button
             onClick={() => setToggle(true)}
@@ -50,7 +50,7 @@ function App() {
             </div>
           }
         >
-          <Availableplayers playersPromise={playersPromise}></Availableplayers>
+          <Availableplayers  availableBalance={availableBalance} setAvailableBalance={setAvailableBalance} playersPromise={playersPromise}></Availableplayers>
         </Suspense>
       ) : (
         <Selectedplayers></Selectedplayers>
