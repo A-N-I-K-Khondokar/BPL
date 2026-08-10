@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Slow Left-arm Orthodox",
+    "rating": 94,
+    "price": 1500000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shakib_Al_Hasan_(4)_(cropped).jpg?width=400"
+  },
+  {
+    "id": 2,
+    "name": "Tamim Iqbal",
+    "country": "Bangladesh",
+    "role": "Opening Batsman",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "N/A",
+    "rating": 88,
+    "price": 1200000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamim_Iqbal_Khan.jpg?width=400"
+  },
+  {
+    "id": 3,
+    "name": "Mushfiqur Rahim",
+    "country": "Bangladesh",
+    "role": "Wicket-Keeper Batsman",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "N/A",
+    "rating": 87,
+    "price": 1100000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mushfiqur_Rahim_2018.jpg?width=400"
+  },
+  {
+    "id": 4,
+    "name": "Mahmudullah Riyad",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-arm Off break",
+    "rating": 82,
+    "price": 950000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mahmudullah_Riyad_(2).jpg?width=400"
+  },
+  {
+    "id": 5,
+    "name": "Mustafizur Rahman",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Left-arm Fast-Medium",
+    "rating": 85,
+    "price": 1000000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mustafizur_Rahman_(4).jpg?width=400"
+  },
+  {
+    "id": 6,
+    "name": "Liton Das",
+    "country": "Bangladesh",
+    "role": "Wicket-Keeper Batsman",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "N/A",
+    "rating": 83,
+    "price": 900000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Liton_Das_(3)_(cropped).jpg?width=400"
+  },
+  {
+    "id": 7,
+    "name": "Mehidy Hasan Miraz",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-arm Off break",
+    "rating": 81,
+    "price": 850000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mehidy_Hasan_Miraz_(3).jpg?width=400"
+  },
+  {
+    "id": 8,
+    "name": "Taskin Ahmed",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Right-arm Fast",
+    "rating": 79,
+    "price": 800000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Taskin_Ahmed_in_2024_(cropped).jpg?width=400"
+  },
+  {
+    "id": 9,
+    "name": "Najmul Hossain Shanto",
+    "country": "Bangladesh",
+    "role": "Top-Order Batsman",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "N/A",
+    "rating": 78,
+    "price": 780000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Najmul_Hossain_Shanto.jpg?width=400"
+  },
+  {
+    "id": 10,
+    "name": "Soumya Sarkar",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Right-arm Medium-Fast",
+    "rating": 75,
+    "price": 700000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Soumya_Sarkar_(1)_(cropped).jpg?width=400"
+  },
+  {
+    "id": 11,
+    "name": "Mashrafe Mortaza",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-arm Fast-Medium",
+    "rating": 89,
+    "price": 650000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Mashrafe_Mortaza,_2019.jpg?width=400"
+  },
+  {
+    "id": 12,
+    "name": "Shoriful Islam",
+    "country": "Bangladesh",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Left-arm Medium-Fast",
+    "rating": 76,
+    "price": 600000,
+    "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Shoriful_Islam,_2024_(cropped).jpg?width=400"
+  }
+]
